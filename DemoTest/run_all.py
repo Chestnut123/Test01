@@ -4,7 +4,7 @@ import os
 #用例存放路径
 case_path = os.path.join(os.getcwd(), "Case")
 #报告存放路径
-report_path = os.path.join(os.getcwd(), "report")
+report_path = os.path.join(os.getcwd(), "Report")
 def all_case():
     discover = unittest.defaultTestLoader.discover(case_path, pattern="login*.py", top_level_dir=None)
     print(discover)
