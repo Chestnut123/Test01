@@ -29,7 +29,7 @@ class Seach(unittest.TestCase):
         pass
 
     def test_search_01(self):
-        data = Read_csv.get_data('D:\\idea-workspace\\untitled\\Data\\login_test.csv')
+        data = Read_csv.get_data('D:\idea-workspace\PythonTest\DemoTest\Data\login_test.csv')
         print(data[0][0])
         login.login_test(self, self.driver, "C0006", "lvliwen", "111111")
         test_agent_user_search.test_agent_user_search(self, self.driver)

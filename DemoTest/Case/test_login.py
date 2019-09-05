@@ -29,7 +29,7 @@ class Login(unittest.TestCase):
     def cleanup(self):
         pass
 
-    @data(*Read_csv.get_data('D:\\idea-workspace\\untitled\\Data\\login_test.csv'))
+    @data(*Read_csv.get_data('D:\idea-workspace\PythonTest\DemoTest\Data\login_test.csv'))
     @unpack
     def test_login(self, code, name, pwd):
         company_code =self.driver.find_element_by_id('j_companyCode')

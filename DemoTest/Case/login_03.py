@@ -26,7 +26,7 @@ class Login(unittest.TestCase):
     def cleanup(self):
         pass
     #-------------------------------------------------------------------------
-    @data(*Read_csv.get_data('D:\idea-workspace\DemoTest\DemoTest\Data\login_test.csv'))
+    @data(*Read_csv.get_data('D:\idea-workspace\PythonTest\DemoTest\Data\login_test.csv'))
     @unpack
     def test_login(self, code, name, pwd):
         login.login_test(self, self.driver, code, name, pwd)
@@ -34,7 +34,7 @@ class Login(unittest.TestCase):
 
     #参数化
     def test_login_01(self):
-        data = Read_csv.get_data('D:\idea-workspace\DemoTest\DemoTest\Data\login_test.csv')
+        data = Read_csv.get_data('D:\idea-workspace\PythonTest\DemoTest\Data\login_test.csv')
         print(data[0][0])
         login.login_test(self, self.driver, data[0][0], data[0][1], data[0][2])
 
