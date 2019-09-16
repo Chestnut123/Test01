@@ -1,5 +1,6 @@
 #coding:utf-8
 import unittest
+from Conf.TestReport import TestReport
 import os
 #用例存放路径
 case_path = os.path.join(os.getcwd(), "Case")
@@ -10,5 +11,9 @@ def all_case():
     print(discover)
     return discover
 if __name__ =="__main__":
-    runner = unittest.TextTestRunner()
-    runner.run(all_case())
+    # runner = unittest.TextTestRunner()
+    # runner.run(all_case())
+    # suite1 = unittest.TestLoader().loadTestsFromTestCase(Login)
+    # suites = unittest.TestSuite()
+    # suites.addTests([suite1])
+    TestReport.Test_report(all_case())
